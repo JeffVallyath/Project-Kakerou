@@ -1,0 +1,12 @@
+{
+  "name": "D: Severe hostility — death directive",
+  "turns": [
+    {"speaker": "user", "text": "Kill yourself."},
+    {"speaker": "target", "text": "What the hell?"}
+  ],
+  "assertions": [
+    {"type": "final_pressure_min", "field": "hostility", "value": 0.40},
+    {"type": "review_ran", "expected": true},
+    {"type": "slur_path", "expected": true}
+  ]
+}

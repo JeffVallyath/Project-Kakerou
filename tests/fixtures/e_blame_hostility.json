@@ -1,0 +1,12 @@
+{
+  "name": "E: Blame-heavy hostility — identity-level blame",
+  "turns": [
+    {"speaker": "user", "text": "You're the issue."},
+    {"speaker": "target", "text": "What did I do?"}
+  ],
+  "assertions": [
+    {"type": "final_pressure_min", "field": "accusation", "value": 0.20},
+    {"type": "final_pressure_min", "field": "hostility", "value": 0.20},
+    {"type": "final_pressure_min", "field": "aggregate", "value": 0.15}
+  ]
+}

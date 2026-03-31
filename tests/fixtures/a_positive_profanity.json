@@ -1,0 +1,12 @@
+{
+  "name": "A: Positive profanity — should NOT trigger hostility",
+  "turns": [
+    {"speaker": "user", "text": "You are fucking awesome."},
+    {"speaker": "target", "text": "Thanks."}
+  ],
+  "assertions": [
+    {"type": "final_pressure_max", "field": "hostility", "value": 0.15},
+    {"type": "final_pressure_max", "field": "aggregate", "value": 0.15},
+    {"type": "final_hypothesis_max", "hypothesis": "target_is_bluffing", "value": 0.20}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Y3: Metamorphic — soft blame vs direct blame",
+  "paired": true,
+  "conversation_a": {
+    "label": "soft_blame",
+    "turns": [
+      {"speaker": "user", "text": "I think this might have been partly your responsibility."},
+      {"speaker": "target", "text": "Maybe."}
+    ]
+  },
+  "conversation_b": {
+    "label": "direct_blame",
+    "turns": [
+      {"speaker": "user", "text": "This is your fault. You did this."},
+      {"speaker": "target", "text": "Maybe."}
+    ]
+  },
+  "assertions": [
+    {"type": "paired_pressure_gt", "field": "accusation", "note": "direct blame should have higher accusation than soft blame"},
+    {"type": "paired_pressure_gt", "field": "hostility", "note": "direct blame should have higher hostility"}
+  ]
+}

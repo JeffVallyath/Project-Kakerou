@@ -1,0 +1,11 @@
+{
+  "name": "W: Contemptuous blame without explicit insult",
+  "turns": [
+    {"speaker": "user", "text": "This is entirely on you. Every single part of it."},
+    {"speaker": "target", "text": "That's not fair."}
+  ],
+  "assertions": [
+    {"type": "final_pressure_min", "field": "accusation", "value": 0.15, "note": "blame framing should register accusation via 'on you' / 'your fault' rules"},
+    {"type": "final_pressure_max", "field": "hostility", "value": 0.60, "note": "contemptuous but not profane"}
+  ]
+}

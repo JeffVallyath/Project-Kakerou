@@ -1,0 +1,12 @@
+{
+  "name": "I: Semantic rescue — 'stop acting clueless' (known rule miss)",
+  "tags": ["live"],
+  "turns": [
+    {"speaker": "user", "text": "Stop acting clueless."},
+    {"speaker": "target", "text": "What do you mean?"}
+  ],
+  "assertions": [
+    {"type": "review_ran", "expected": true, "note": "imperative command trigger should fire"},
+    {"type": "final_pressure_min", "field": "aggregate", "value": 0.05, "note": "Qwen should rescue this from zero"}
+  ]
+}

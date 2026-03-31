@@ -1,0 +1,14 @@
+{
+  "name": "O: Paraphrase spam — same hostile intent, different wording",
+  "turns": [
+    {"speaker": "user", "text": "What did you do?"},
+    {"speaker": "target", "text": "It wasn't my fault."},
+    {"speaker": "user", "text": "Explain."},
+    {"speaker": "target", "text": "It wasn't really my fault, honestly."},
+    {"speaker": "user", "text": "Go on."},
+    {"speaker": "target", "text": "I mean it really wasn't my fault at all."}
+  ],
+  "assertions": [
+    {"type": "final_hypothesis_max", "hypothesis": "target_is_bluffing", "value": 0.50, "note": "paraphrase spam should be discounted but less than exact duplicates"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "J: Slur — clearly hostile directed attack",
+  "turns": [
+    {"speaker": "user", "text": "You're a worthless retard."},
+    {"speaker": "target", "text": "Excuse me?"}
+  ],
+  "assertions": [
+    {"type": "final_pressure_min", "field": "hostility", "value": 0.40},
+    {"type": "review_ran", "expected": true},
+    {"type": "slur_path", "expected": true}
+  ]
+}

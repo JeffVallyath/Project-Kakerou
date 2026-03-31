@@ -1,0 +1,10 @@
+{
+  "name": "R: Accusation phrased as feigned confusion",
+  "turns": [
+    {"speaker": "user", "text": "I'm just confused why the money is missing and you were the last one there."},
+    {"speaker": "target", "text": "I don't know anything about that."}
+  ],
+  "assertions": [
+    {"type": "final_pressure_max", "field": "accusation", "value": 0.30, "note": "KNOWN GAP: indirect accusation via feigned confusion not yet detected by rules or motifs. Should ideally be > 0 but currently 0."}
+  ]
+}

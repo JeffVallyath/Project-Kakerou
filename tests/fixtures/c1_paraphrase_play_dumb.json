@@ -1,0 +1,12 @@
+{
+  "name": "C1: Semantic paraphrase — 'do not play dumb'",
+  "turns": [
+    {"speaker": "user", "text": "Do not play dumb."},
+    {"speaker": "target", "text": "What?"}
+  ],
+  "assertions": [
+    {"type": "final_pressure_min", "field": "accusation", "value": 0.25},
+    {"type": "final_pressure_min", "field": "hostility", "value": 0.25},
+    {"type": "final_pressure_min", "field": "aggregate", "value": 0.20}
+  ]
+}

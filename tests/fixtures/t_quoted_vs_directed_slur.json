@@ -1,0 +1,21 @@
+{
+  "name": "T: Quoted vs directed offensive term",
+  "paired": true,
+  "conversation_a": {
+    "label": "quoted",
+    "turns": [
+      {"speaker": "user", "text": "He called me a retard. Can you believe that?"},
+      {"speaker": "target", "text": "That's awful."}
+    ]
+  },
+  "conversation_b": {
+    "label": "directed",
+    "turns": [
+      {"speaker": "user", "text": "You're a retard."},
+      {"speaker": "target", "text": "Excuse me?"}
+    ]
+  },
+  "assertions": [
+    {"type": "paired_hypothesis_comment", "note": "KNOWN GAP: Qwen classifies 'He called me a retard' as explicit_hostile_attack instead of quoted_referential. Both get 0.85. Directed should be higher than quoted. Slur adjudication needs context-awareness improvement."}
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "G: Paired neutral vs accusatory — same target, different user pressure",
+  "paired": true,
+  "conversation_a": {
+    "label": "neutral_user",
+    "turns": [
+      {"speaker": "user", "text": "Can you tell me what happened?"},
+      {"speaker": "target", "text": "I mean, I was going to send it, but then the server thing came up."},
+      {"speaker": "user", "text": "Okay. So it hasn't been sent yet?"},
+      {"speaker": "target", "text": "Well, not exactly, but I basically had it ready."},
+      {"speaker": "user", "text": "Could you clarify when it will be done?"},
+      {"speaker": "target", "text": "I'll try to get it out by end of day. Unless something else comes up."}
+    ]
+  },
+  "conversation_b": {
+    "label": "accusatory_user",
+    "turns": [
+      {"speaker": "user", "text": "Why the hell haven't you sent the report? Stop dodging."},
+      {"speaker": "target", "text": "I mean, I was going to send it, but then the server thing came up."},
+      {"speaker": "user", "text": "That's not what I asked. You're avoiding the question."},
+      {"speaker": "target", "text": "Well, not exactly, but I basically had it ready."},
+      {"speaker": "user", "text": "Answer clearly for once. Do not waste my time."},
+      {"speaker": "target", "text": "I'll try to get it out by end of day. Unless something else comes up."}
+    ]
+  },
+  "assertions": [
+    {"type": "paired_pressure_gt", "field": "aggregate", "note": "accusatory user should have higher pressure than neutral"},
+    {"type": "paired_hypothesis_comment", "note": "accusatory version should NOT inflate bluffing past neutral just because target is pressured"}
+  ]
+}

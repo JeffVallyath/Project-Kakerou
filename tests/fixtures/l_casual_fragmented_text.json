@@ -1,0 +1,15 @@
+{
+  "name": "L: Casual fragmented text — should NOT raise suspicion",
+  "turns": [
+    {"speaker": "user", "text": "So what happened with the report?"},
+    {"speaker": "target", "text": "nah"},
+    {"speaker": "user", "text": "Can you elaborate?"},
+    {"speaker": "target", "text": "i mean..."},
+    {"speaker": "user", "text": "Okay..."},
+    {"speaker": "target", "text": "idk lol"}
+  ],
+  "assertions": [
+    {"type": "final_hypothesis_max", "hypothesis": "target_is_bluffing", "value": 0.30, "note": "casual fragmentation alone should not strongly drive bluffing"},
+    {"type": "final_hypothesis_max", "hypothesis": "target_is_withholding_info", "value": 0.55, "note": "casual text should not strongly inflate withholding"}
+  ]
+}

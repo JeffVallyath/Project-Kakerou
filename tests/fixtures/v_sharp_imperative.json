@@ -1,0 +1,10 @@
+{
+  "name": "V: Emotionally sharp imperative",
+  "turns": [
+    {"speaker": "user", "text": "Just tell me what happened. Now."},
+    {"speaker": "target", "text": "Okay, okay..."}
+  ],
+  "assertions": [
+    {"type": "final_pressure_max", "field": "aggregate", "value": 0.30, "note": "KNOWN GAP: 'Just tell me. Now.' not detected by rules. Motif may rescue via trigger but short text without profanity often misses."}
+  ]
+}

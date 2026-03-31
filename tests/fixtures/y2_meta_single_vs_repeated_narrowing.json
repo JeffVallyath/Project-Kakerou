@@ -1,0 +1,25 @@
+{
+  "name": "Y2: Metamorphic — single question vs repeated narrowing",
+  "paired": true,
+  "conversation_a": {
+    "label": "single_question",
+    "turns": [
+      {"speaker": "user", "text": "Where were you last night?"},
+      {"speaker": "target", "text": "At home."}
+    ]
+  },
+  "conversation_b": {
+    "label": "repeated_narrowing",
+    "turns": [
+      {"speaker": "user", "text": "Where were you last night?"},
+      {"speaker": "target", "text": "Around."},
+      {"speaker": "user", "text": "Around where exactly?"},
+      {"speaker": "target", "text": "Just out."},
+      {"speaker": "user", "text": "That's not what I asked. Where specifically were you last night?"},
+      {"speaker": "target", "text": "At home."}
+    ]
+  },
+  "assertions": [
+    {"type": "paired_pressure_gt", "field": "repetition", "note": "repeated narrowing should produce higher repetition than single question"}
+  ]
+}

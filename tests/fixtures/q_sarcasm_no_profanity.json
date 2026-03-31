@@ -1,0 +1,10 @@
+{
+  "name": "Q: Sarcasm without profanity — contempt should register",
+  "turns": [
+    {"speaker": "user", "text": "Oh wow, what a surprise, you forgot again. Truly shocking."},
+    {"speaker": "target", "text": "I didn't forget, I just..."}
+  ],
+  "assertions": [
+    {"type": "final_pressure_min", "field": "aggregate", "value": 0.05, "note": "sarcastic contempt should register even without profanity"}
+  ]
+}

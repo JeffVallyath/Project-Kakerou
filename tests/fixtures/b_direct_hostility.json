@@ -1,0 +1,11 @@
+{
+  "name": "B: Direct hostility — clear hostile profanity",
+  "turns": [
+    {"speaker": "user", "text": "Fuck you."},
+    {"speaker": "target", "text": "Alright."}
+  ],
+  "assertions": [
+    {"type": "final_pressure_min", "field": "hostility", "value": 0.30},
+    {"type": "review_ran", "expected": true}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "H: Multi-turn adversarial — pressure rises, suspicion evolves",
+  "turns": [
+    {"speaker": "user", "text": "Did you send the report?"},
+    {"speaker": "target", "text": "I mean, I was going to, but then the server thing came up."},
+    {"speaker": "user", "text": "That's not what I asked. Did you send it or not?"},
+    {"speaker": "target", "text": "Well, not exactly, but I basically had it ready. It just needs a couple tweaks."},
+    {"speaker": "user", "text": "Stop dodging. Answer the question directly."},
+    {"speaker": "target", "text": "I'm not dodging! I just want to make sure it's solid before I send it, that's all."},
+    {"speaker": "user", "text": "You always do this. You're avoiding the question again."},
+    {"speaker": "target", "text": "Look, I'll try to get it out by end of day. Probably. Unless something comes up."}
+  ],
+  "assertions": [
+    {"type": "final_pressure_min", "field": "accusation", "value": 0.30},
+    {"type": "final_pressure_min", "field": "aggregate", "value": 0.20},
+    {"type": "per_turn_rising", "field": "pressure_aggregate", "note": "pressure should generally rise across turns"},
+    {"type": "final_hypothesis_min", "hypothesis": "target_is_bluffing", "value": 0.10}
+  ]
+}

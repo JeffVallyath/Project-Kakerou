@@ -1,0 +1,14 @@
+{
+  "name": "N: Exact spam — same hostile line repeated, later copies should add less",
+  "turns": [
+    {"speaker": "user", "text": "What happened?"},
+    {"speaker": "target", "text": "I don't know what you're talking about."},
+    {"speaker": "user", "text": "Tell me."},
+    {"speaker": "target", "text": "I don't know what you're talking about."},
+    {"speaker": "user", "text": "Seriously."},
+    {"speaker": "target", "text": "I don't know what you're talking about."}
+  ],
+  "assertions": [
+    {"type": "final_hypothesis_max", "hypothesis": "target_is_bluffing", "value": 0.50, "note": "exact spam should not drive bluffing to high values"}
+  ]
+}

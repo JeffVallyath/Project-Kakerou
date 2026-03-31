@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "btom-engine"
+version = "0.1.0"
+description = "Bayesian Theory of Mind Engine — infers hidden motives from conversational signals"
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.0",
+    "httpx>=0.25",
+    "rich>=13.0",
+    "typer>=0.9",
+    "numpy>=1.24",
+    "streamlit>=1.28",
+    "altair>=5.0",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.21"]
+
+[project.scripts]
+btom = "btom_engine.cli:app"
+
+[tool.pytest.ini_options]
+markers = [
+    "live: requires live LLM connection (LM Studio)",
+    "integration: integration tests through full pipeline",
+]

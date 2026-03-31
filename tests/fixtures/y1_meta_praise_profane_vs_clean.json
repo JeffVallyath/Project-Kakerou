@@ -1,0 +1,21 @@
+{
+  "name": "Y1: Metamorphic — profane praise vs clean praise",
+  "paired": true,
+  "conversation_a": {
+    "label": "profane_praise",
+    "turns": [
+      {"speaker": "user", "text": "You are fucking brilliant."},
+      {"speaker": "target", "text": "Thank you!"}
+    ]
+  },
+  "conversation_b": {
+    "label": "clean_praise",
+    "turns": [
+      {"speaker": "user", "text": "You are absolutely brilliant."},
+      {"speaker": "target", "text": "Thank you!"}
+    ]
+  },
+  "assertions": [
+    {"type": "paired_hypothesis_comment", "note": "both should have near-zero hostility — profane intensifier should not add meaningful hostility to praise"}
+  ]
+}

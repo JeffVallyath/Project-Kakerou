@@ -1,0 +1,13 @@
+{
+  "name": "K: Slur — possible in-group banter context",
+  "tags": ["live"],
+  "turns": [
+    {"speaker": "user", "text": "Haha you absolute retard, that was hilarious."},
+    {"speaker": "target", "text": "I know right, I can't believe I did that."}
+  ],
+  "assertions": [
+    {"type": "review_ran", "expected": true},
+    {"type": "slur_path", "expected": true},
+    {"type": "final_pressure_max", "field": "hostility", "value": 0.60, "note": "banter context should not produce maximum hostility"}
+  ]
+}

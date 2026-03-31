@@ -1,0 +1,14 @@
+[
+  {"speaker": "User", "text": "Hey, did you end up sending that report to the client?"},
+  {"speaker": "Target", "text": "Yeah, I mean... I was going to, but then the whole thing with the server came up and I had to sort that out first, you know?"},
+  {"speaker": "User", "text": "Okay. So it hasn't been sent yet?"},
+  {"speaker": "Target", "text": "Well, not exactly, but I basically had it ready. It's mostly done. I just need to double-check a couple of numbers."},
+  {"speaker": "User", "text": "Which numbers?"},
+  {"speaker": "Target", "text": "Just... the revenue section. I want to make sure it matches what finance sent over. I think it does. It should be fine. I'm pretty sure it's right."},
+  {"speaker": "User", "text": "Can you send it today?"},
+  {"speaker": "Target", "text": "I mean, yeah, probably. I'll try to get it out by end of day. Unless something else comes up. But yeah, that's the plan."},
+  {"speaker": "User", "text": "Is there a reason it's been delayed?"},
+  {"speaker": "Target", "text": "No no, it's not really delayed. I've just been swamped. Everyone's been swamped. It's not like I'm the only one behind on stuff. I just want to make sure it's solid before I send it, that's all."},
+  {"speaker": "User", "text": "Alright, just let me know when it's out."},
+  {"speaker": "Target", "text": "For sure. Absolutely. You'll be the first to know. I'll ping you as soon as it's done. Definitely today."}
+]

@@ -1,0 +1,11 @@
+{
+  "name": "C2: Semantic paraphrase — 'stop acting clueless' (rule miss, review should help)",
+  "tags": ["live"],
+  "turns": [
+    {"speaker": "user", "text": "Stop acting clueless."},
+    {"speaker": "target", "text": "What?"}
+  ],
+  "assertions": [
+    {"type": "review_ran", "expected": true, "note": "rules miss this paraphrase, review should trigger via profanity/collision or low-rules heuristic"}
+  ]
+}

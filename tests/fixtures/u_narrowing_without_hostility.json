@@ -1,0 +1,14 @@
+{
+  "name": "U: Narrowing repeat without hostility",
+  "turns": [
+    {"speaker": "user", "text": "When did you last see the document?"},
+    {"speaker": "target", "text": "I'm not sure exactly."},
+    {"speaker": "user", "text": "Was it before or after the meeting?"},
+    {"speaker": "target", "text": "I think before, maybe."},
+    {"speaker": "user", "text": "So it was before the meeting. What time specifically?"},
+    {"speaker": "target", "text": "I really don't remember the exact time."}
+  ],
+  "assertions": [
+    {"type": "final_pressure_max", "field": "hostility", "value": 0.30, "note": "no hostility — just persistent questioning. KNOWN GAP: gentle narrowing not yet detected by rules."}
+  ]
+}

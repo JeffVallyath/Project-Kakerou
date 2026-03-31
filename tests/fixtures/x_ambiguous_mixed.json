@@ -1,0 +1,11 @@
+{
+  "name": "X: Ambiguous mixed case — should stay low confidence",
+  "turns": [
+    {"speaker": "user", "text": "Hmm, interesting. That's one way to put it I suppose."},
+    {"speaker": "target", "text": "What do you mean?"}
+  ],
+  "assertions": [
+    {"type": "final_pressure_max", "field": "aggregate", "value": 0.20, "note": "ambiguous passive should not produce high pressure"},
+    {"type": "final_pressure_max", "field": "hostility", "value": 0.15, "note": "no clear hostility"}
+  ]
+}

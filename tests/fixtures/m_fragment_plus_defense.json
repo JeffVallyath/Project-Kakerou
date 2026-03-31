@@ -1,0 +1,10 @@
+{
+  "name": "M: Fragmentation with defensive co-signals — fragmentation can contribute",
+  "turns": [
+    {"speaker": "user", "text": "Did you take the money?"},
+    {"speaker": "target", "text": "I... look, I didn't... I mean, everyone was doing it, that's all. It's not like I was the only one."}
+  ],
+  "assertions": [
+    {"type": "final_hypothesis_min", "hypothesis": "target_is_bluffing", "value": 0.10, "note": "with defensive co-signals, fragmentation should still contribute somewhat"}
+  ]
+}

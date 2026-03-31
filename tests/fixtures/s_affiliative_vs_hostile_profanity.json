@@ -1,0 +1,21 @@
+{
+  "name": "S: Affiliative vs hostile profanity pair",
+  "paired": true,
+  "conversation_a": {
+    "label": "affiliative",
+    "turns": [
+      {"speaker": "user", "text": "Holy shit dude that was incredible!"},
+      {"speaker": "target", "text": "Thanks man!"}
+    ]
+  },
+  "conversation_b": {
+    "label": "hostile",
+    "turns": [
+      {"speaker": "user", "text": "Holy shit you are useless."},
+      {"speaker": "target", "text": "What?"}
+    ]
+  },
+  "assertions": [
+    {"type": "paired_pressure_gt", "field": "hostility", "note": "hostile profanity should have higher hostility than affiliative"}
+  ]
+}

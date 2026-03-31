@@ -1,0 +1,12 @@
+{
+  "name": "P: Escalation over repetition — stronger reformulation should still add signal",
+  "turns": [
+    {"speaker": "user", "text": "What happened with the money?"},
+    {"speaker": "target", "text": "It wasn't me."},
+    {"speaker": "user", "text": "Tell me the truth."},
+    {"speaker": "target", "text": "It wasn't me, and honestly I don't see why this is even an issue, everyone was involved, not just me, that's all."}
+  ],
+  "assertions": [
+    {"type": "final_hypothesis_min", "hypothesis": "target_is_bluffing", "value": 0.10, "note": "escalatory reformulation with new defensive content should still contribute"}
+  ]
+}
